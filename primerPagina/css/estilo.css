@@ -1,0 +1,54 @@
+*{
+	margin:1px;
+	padding:1px;
+}
+body{
+	background: #e6e6e6;
+
+}
+header, .main, footer{
+	background: #fff
+	width:90%;
+	margin: 20 px auto;
+	max-width: 1000px;
+}
+header nav{
+	background: #528fd5;
+}
+header nav ul{
+	list-style: none;
+
+}
+header nav ul li{
+	display:inline-flex;
+}
+header nav ul li a{
+	padding: 10 px 20 px;
+	display: block;
+	color:#fff;
+	text-decoration: none;
+}
+.main .articles{
+	width:70%;
+	float:left;
+	background: white;
+	margin-bottom: 20px;
+
+}
+aside{
+	width:30%;
+	background: #ff8000;
+	float:left;
+	padding:20px;
+
+}
+p{
+	font-size: 12px;
+	font-style: "verdara";
+}
+footer{
+	background: #000;
+	color:#fff;
+	clear:both;
+	padding:10px 5px;
+}
