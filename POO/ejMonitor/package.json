@@ -1,0 +1,15 @@
+{
+  "name": "tele",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "moni": "tsc Monitor.ts & node monitor.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "viviBlasco",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  },
+  "description": ""
+}
