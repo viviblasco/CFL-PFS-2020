@@ -1,0 +1,16 @@
+{
+  "name": "pruebataybl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "taybl.js",
+  "scripts": {
+    "tay":"tsc taybl.ts & node taybl.js",
+    
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "taybl": "^1.1.1"
+  }
+}
