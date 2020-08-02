@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "paciente":"tsc paciente.ts"
   },
   "author": "ViviBlasco",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^9.0.1",
+    "readline-sync": "^1.4.10"
+  }
 }
