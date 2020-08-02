@@ -2,6 +2,7 @@
 exports.__esModule = true;
 var GestorLibros_1 = require("./GestorLibros");
 var readlineSync = require("./node_modules/readline-sync");
+var Taybl_1 = require("Taybl");
 var miGestorLibros;
 var miSegundoGestorLibros;
 var accion;
@@ -15,6 +16,7 @@ console.log('Creando Biblioteca sin archivo:');
 miSegundoGestorLibros = new GestorLibros_1["default"]();
 console.log(miSegundoGestorLibros);
 console.log('');
+var object = menu();
 console.log('Trabajando con el Gestor:');
 while (accion != 0) {
     ejecutar();
@@ -75,4 +77,11 @@ function ejecutar() {
     else if (accion === 6) {
         console.log(miGestorLibros);
     }
+    var taybl = new Taybl_1["default"](object);
+    taybl
+        .withHorizontalLineStyle("-")
+        .withVerticalLineStyle("|")
+        .withNumberOfSpacesAtStartOfColumns(1)
+        .withNumberOfSpacesAtEndOfColumns(1)
+        .print();
 }
