@@ -1,6 +1,7 @@
 import LectorArchivo from "./LectorArchivos";
 import Libro from './Libro';
 
+
 export default class GestorLibros {
     private lector: LectorArchivo;
     private libros: Libro[];
@@ -75,8 +76,11 @@ export default class GestorLibros {
      * @returns Imprime por consola todos los libros que tengan el título enviado por parámetro
      */
     public verLibrosPorAutor(autor: string): void {
+
         for(let i: number = 0; i<this.libros.length; i++) {
+            
             if (this.libros[i].getAutor() === autor) {
+
                 console.log(this.libros[i]);
             }
         };
