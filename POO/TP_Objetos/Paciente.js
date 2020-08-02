@@ -42,6 +42,9 @@ var Paciente = /** @class */ (function () {
     Paciente.prototype.setNombreYApellido = function (nombreYApellido) {
         this.nombreYApellido = nombreYApellido;
     };
+    Paciente.prototype.setEdad = function (edad) {
+        this.edad = edad;
+    };
     Paciente.prototype.setTelefono = function (telefono) {
         this.telefono = telefono;
     };
