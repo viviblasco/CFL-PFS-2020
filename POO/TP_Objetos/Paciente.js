@@ -1,18 +1,20 @@
+"use strict";
+exports.__esModule = true;
 var Paciente = /** @class */ (function () {
     //constructor
-    function Paciente(idPaciente, DNI, nombreYApellido, edad, telefono) {
-        this.idPaciente = idPaciente;
-        this.DNI = DNI;
+    function Paciente(id, Dni, nombreYApellido, edad, telefono) {
+        this.id = id;
+        this.Dni = Dni;
         this.nombreYApellido = nombreYApellido;
         this.edad = edad;
         this.telefono = telefono;
     }
     //metodos get
     Paciente.prototype.getId = function () {
-        return this.idPaciente;
+        return this.id;
     };
     Paciente.prototype.getDNI = function () {
-        return this.DNI;
+        return this.Dni;
     };
     Paciente.prototype.getNombreYApellido = function () {
         return this.nombreYApellido;
@@ -24,11 +26,11 @@ var Paciente = /** @class */ (function () {
         return this.telefono;
     };
     //metodos set
-    Paciente.prototype.setId = function (idPaciente) {
-        this.idPaciente = idPaciente;
+    Paciente.prototype.setId = function (id) {
+        this.id = id;
     };
-    Paciente.prototype.setDNI = function (DNI) {
-        this.DNI = DNI;
+    Paciente.prototype.setDNI = function (Dni) {
+        this.Dni = Dni;
     };
     Paciente.prototype.setNombreYApellido = function (nombreYApellido) {
         this.nombreYApellido = nombreYApellido;
@@ -38,3 +40,4 @@ var Paciente = /** @class */ (function () {
     };
     return Paciente;
 }());
+exports["default"] = Paciente;
