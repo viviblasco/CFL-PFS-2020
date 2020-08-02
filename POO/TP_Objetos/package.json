@@ -1,16 +1,17 @@
 {
-  "name": "tp_objetos",
+  "name": "gestor",
   "version": "1.0.0",
-  "description": "",
+  "description": "Gestor de Paciente\r Este trabajo es uno que comence en el curso de 111mil.\r La idea es realizar con el una agenda de turnos para el medico y pacientes con sus historias clinicas.\r por el momento mediante la libreria de npm FS-extra se accede a un archivo .txt con una lista de pacientes.\r Se puede agregar, buscar por nombre y apellido , imprimir, modificar y mostrar toda la lista de pacientes\r Emplee la libreria de readline.sync para el ingreso de datos del usuario.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gestor":"tsc main.ts & node main.js"
+    "gestor": "tsc main.ts & node main.js"
   },
   "author": "ViviBlasco",
   "license": "ISC",
   "dependencies": {
     "fs-extra": "^9.0.1",
-    "readline-sync": "^1.4.10"
+    "readline-sync": "^1.4.10",
+    "taybl": "^1.1.1"
   }
 }
