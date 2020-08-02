@@ -1,15 +1,15 @@
-class Paciente {
+export default class Paciente {
    //variables
-    private idPaciente:number;
-    private DNI: number;
+    private id:number;
+    private Dni: number;
     private nombreYApellido:string;
     private edad:number;
     private telefono:number;
     
    //constructor
-    constructor(idPaciente:number,DNI:number,nombreYApellido:string,edad:number,telefono:number) {
-       this.idPaciente=idPaciente; 
-       this.DNI=DNI; 
+    constructor(id:number,Dni:number,nombreYApellido:string,edad:number,telefono:number) {
+       this.id=id; 
+       this.Dni=Dni; 
        this.nombreYApellido=nombreYApellido;
        this.edad = edad;
        this.telefono = telefono;
@@ -18,10 +18,10 @@ class Paciente {
    //metodos get
 
    public getId(): number {
-      return this.idPaciente;
+      return this.id;
   }
   public getDNI(): number {
-   return this.DNI;
+   return this.Dni;
 }
   public getNombreYApellido(): string {
       return this.nombreYApellido;
@@ -37,11 +37,11 @@ class Paciente {
 
   //metodos set
    
-  public setId(idPaciente:number): void {
-         this.idPaciente=idPaciente;
+  public setId(id:number): void {
+         this.id=id;
 }
-  public setDNI(DNI:number):void{
-        this.DNI=DNI;
+  public setDNI(Dni:number):void{
+        this.Dni=Dni;
   }
   public setNombreYApellido(nombreYApellido:string):void{
          this.nombreYApellido=nombreYApellido;
