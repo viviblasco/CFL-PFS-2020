@@ -57,6 +57,9 @@ export default class Paciente {
   public setNombreYApellido(nombreYApellido:string):void{
          this.nombreYApellido=nombreYApellido;
   }
+  public setEdad(edad:number):void{
+    this.edad=edad;
+}
   public setTelefono(telefono:number):void{
          this.telefono=telefono;
   }
