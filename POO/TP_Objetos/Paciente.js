@@ -2,8 +2,9 @@
 exports.__esModule = true;
 var Paciente = /** @class */ (function () {
     //constructor
-    function Paciente(id, Dni, nombreYApellido, edad, telefono) {
+    function Paciente(id, doctor, Dni, nombreYApellido, edad, telefono) {
         this.id = id;
+        this.doctor = doctor;
         this.Dni = Dni;
         this.nombreYApellido = nombreYApellido;
         this.edad = edad;
@@ -12,6 +13,9 @@ var Paciente = /** @class */ (function () {
     //metodos get
     Paciente.prototype.getId = function () {
         return this.id;
+    };
+    Paciente.prototype.getDoctor = function () {
+        return this.doctor;
     };
     Paciente.prototype.getDNI = function () {
         return this.Dni;
@@ -29,7 +33,10 @@ var Paciente = /** @class */ (function () {
     Paciente.prototype.setId = function (id) {
         this.id = id;
     };
-    Paciente.prototype.setDNI = function (Dni) {
+    Paciente.prototype.setDoctor = function (doctor) {
+        this.doctor = doctor;
+    };
+    Paciente.prototype.setDni = function (Dni) {
         this.Dni = Dni;
     };
     Paciente.prototype.setNombreYApellido = function (nombreYApellido) {
