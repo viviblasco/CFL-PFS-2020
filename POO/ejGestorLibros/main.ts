@@ -1,9 +1,11 @@
 import GestorLibros from "./GestorLibros";
 import * as readlineSync from './node_modules/readline-sync'; 
+import Taybl from "Taybl";
 
 let miGestorLibros: GestorLibros;
 let miSegundoGestorLibros: GestorLibros;
 let accion: number;
+
 
 // Probando Clase GestorLibros
 console.log('Probando Clase GestorLibros\n');
@@ -17,6 +19,9 @@ miSegundoGestorLibros = new GestorLibros();
 console.log(miSegundoGestorLibros);
 console.log('');
 
+const object = menu();
+     
+
 
 console.log('Trabajando con el Gestor:' );
 while (accion != 0) {
@@ -27,7 +32,7 @@ while (accion != 0) {
 
 // Metodos -----------------------------------------------------------
 
-function menu(): number {
+ function menu(): number {
     console.log("Menu:")
     console.log("1) Agregar libro");
     console.log("2) Ver libros por titulo");
@@ -39,6 +44,8 @@ function menu(): number {
 
     return readlineSync.questionInt("Seleccione una opcion: ");
 }
+
+
 
 
 function ejecutar(): void {
@@ -80,4 +87,13 @@ function ejecutar(): void {
     } else if (accion === 6) {
         console.log(miGestorLibros);
     }
+
+    const taybl = new Taybl(object);
+taybl
+  .withHorizontalLineStyle("-")
+  .withVerticalLineStyle("|")
+  .withNumberOfSpacesAtStartOfColumns(1)
+  .withNumberOfSpacesAtEndOfColumns(1)
+  .print();
+
 }
