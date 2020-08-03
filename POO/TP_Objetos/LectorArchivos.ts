@@ -1,5 +1,6 @@
 import * as fs from "fs-extra";
 
+
 export default class LectorArchivo {
     private archivo: string;
     private lineas: string[];
@@ -19,8 +20,10 @@ export default class LectorArchivo {
 
         return false;
     } 
-
+    
     public leerArchivo(): string[] {
+        
+        
         return this.lineas;
     } 
 }
