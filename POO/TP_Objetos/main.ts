@@ -60,12 +60,14 @@ function ejecutar(): void {
         miGestor1.borrarPaciente(id);
 
     } else if (accion === 4) {
+        
         let id: number = readlineSync.questionInt("Ingrese el id del paciente a actualizar: ");
         let doctor: string = null;
         let Dni: number = null;
         let nombreYApellido: string = null;
         let edad: number = null;
         let telefono:number = null;
+
         if (readlineSync.question("Desea cambiar el doctor? 1 (Si) - 2 (No) ") === 1 ) {
             doctor = readlineSync.question("Ingrese el nuevo doctor: ");
         }
