@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var SmartTv_1 = require("./SmartTv");
+var tele = new SmartTv_1["default"]();
+console.log(tele);
+tele.subirVolumen();
+tele.cambiarCanal(10);
+console.log(this.volumenActual);
+console.log(this.estaPrendido);
+console.log(this.canalActual);
+console.log(tele);
