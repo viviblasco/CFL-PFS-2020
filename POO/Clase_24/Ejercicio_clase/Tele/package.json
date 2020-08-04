@@ -1,0 +1,12 @@
+{
+  "name": "televisor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tele":"tsc main.ts & node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ViviBlasco",
+  "license": "ISC"
+}
