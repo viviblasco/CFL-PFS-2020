@@ -1,5 +1,5 @@
 export default class Televisor {
-    private estaPrendido:boolean;
+    protected estaPrendido:boolean;
     private bateriaActual:number;
 
 
