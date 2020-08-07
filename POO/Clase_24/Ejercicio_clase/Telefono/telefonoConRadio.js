@@ -14,16 +14,17 @@ var __extends = (this && this.__extends) || (function () {
 })();
 exports.__esModule = true;
 var Telefono_1 = require("./Telefono");
-var TelefonoConCamara = /** @class */ (function (_super) {
-    __extends(TelefonoConCamara, _super);
-    function TelefonoConCamara() {
+var TelefonoConRadio = /** @class */ (function (_super) {
+    __extends(TelefonoConRadio, _super);
+    function TelefonoConRadio() {
         var _this = _super.call(this) || this;
+        _this.frecuenciaActual = 0;
         _this.frecuenciaActual = 85.5;
         return _this;
     }
-    TelefonoConCamara.prototype.verfrecuenciaActual = function (frecuenciaActual) {
+    TelefonoConRadio.prototype.verfrecuenciaActual = function (frecuenciaActual) {
         console.log(frecuenciaActual);
     };
-    return TelefonoConCamara;
+    return TelefonoConRadio;
 }(Telefono_1["default"]));
-exports["default"] = TelefonoConCamara;
+exports["default"] = TelefonoConRadio;
