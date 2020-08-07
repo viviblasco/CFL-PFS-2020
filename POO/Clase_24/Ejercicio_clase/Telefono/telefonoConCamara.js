@@ -17,10 +17,13 @@ var Telefono_1 = require("./Telefono");
 var TelefonoConCamara = /** @class */ (function (_super) {
     __extends(TelefonoConCamara, _super);
     function TelefonoConCamara() {
-        return _super.call(this) || this;
+        var _this = _super.call(this) || this;
+        _this.estaPrendido = true;
+        return _this;
     }
     TelefonoConCamara.prototype.sacarFoto = function (mensaje) {
-        console.log("click");
+        mensaje = "click";
+        console.log(mensaje);
     };
     return TelefonoConCamara;
 }(Telefono_1["default"]));
