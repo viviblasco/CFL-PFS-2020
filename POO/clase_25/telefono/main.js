@@ -1,8 +1,10 @@
 "use strict";
 exports.__esModule = true;
+var telefono_1 = require("./telefono");
+var TelefonoConCamara_1 = require("./TelefonoConCamara");
 var movil1;
 var movil2;
-movil1.prenderApagar(false);
-movil2.prenderApagar(true);
-movil1.hacerLlamada;
-movil2.sacarFoto;
+movil1 = new telefono_1["default"];
+movil2 = new TelefonoConCamara_1["default"];
+movil1.hacerLlamada("hola", 2494051223);
+console.log(movil2.sacarFoto);
