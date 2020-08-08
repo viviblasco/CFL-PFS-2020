@@ -5,9 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "movil":"tsc main.ts & node main.js",
-    "compilar":"tsc telefono.ts & tsc telefonoConCamara.ts & tsc camara.ts"
+    "movil": "tsc main.ts & node main.js",
+    "compilar": "tsc telefono.ts & tsc telefonoConCamara.ts & tsc camara.ts"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "node-emoji": "^1.10.0"
+  }
 }
