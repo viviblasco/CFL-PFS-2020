@@ -12,9 +12,9 @@ export default class TelefonoConCamara extends Telefono {
         this.camara=new camara;
     }
 
-    public sacarFoto():string{
-        return "click";
-
+    public sacarFoto():void{
+        
+      
         
 
     }
