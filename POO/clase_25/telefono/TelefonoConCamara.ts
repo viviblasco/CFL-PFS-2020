@@ -9,14 +9,14 @@ export default class TelefonoConCamara extends Telefono {
 
     constructor(){
         super();
-        this.camara=new camara;
+        
+        this.camara=new camara();
     }
 
     public sacarFoto():void{
-        
+        this.camara.sacarFoto();
       
-        
-
     }
+    
     
 }
