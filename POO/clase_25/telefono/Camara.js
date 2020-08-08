@@ -3,8 +3,8 @@ exports.__esModule = true;
 var camara = /** @class */ (function () {
     function camara() {
     }
-    camara.prototype.sacarFotos = function () {
-        console.log("click");
+    camara.prototype.sacarFoto = function () {
+        return "click";
     };
     return camara;
 }());
