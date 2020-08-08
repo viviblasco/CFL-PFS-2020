@@ -23,7 +23,6 @@ var TelefonoConCamara = /** @class */ (function (_super) {
         return _this;
     }
     TelefonoConCamara.prototype.sacarFoto = function () {
-        return "click";
     };
     return TelefonoConCamara;
 }(telefono_1["default"]));
