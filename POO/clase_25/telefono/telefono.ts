@@ -22,14 +22,14 @@ export default class Telefono{
 
 
     }
-    public prenderApagar(estado:boolean){
+    public prenderApagar(estado:boolean):void{
         if (estado = true){
             console.log("su telefono esta prendido");
         }else{
             console.log("telefono apagado");
         }
-                
-        }
+    }     
+        
         
        
 
