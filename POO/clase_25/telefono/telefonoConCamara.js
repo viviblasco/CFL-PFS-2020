@@ -19,7 +19,7 @@ var TelefonoConCamara = /** @class */ (function (_super) {
     __extends(TelefonoConCamara, _super);
     function TelefonoConCamara() {
         var _this = _super.call(this) || this;
-        _this.camara = new Camara_1["default"]();
+        _this.camara = new Camara_1["default"];
         return _this;
     }
     TelefonoConCamara.prototype.sacarFoto = function () {
