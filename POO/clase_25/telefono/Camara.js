@@ -1,11 +1,12 @@
 "use strict";
 exports.__esModule = true;
-var camara = /** @class */ (function () {
-    function camara() {
+var Camara = /** @class */ (function () {
+    function Camara() {
     }
-    camara.prototype.sacarFoto = function () {
+    Camara.prototype.sacarFoto = function () {
         return "click";
+        console.log("click");
     };
-    return camara;
+    return Camara;
 }());
-exports["default"] = camara;
+exports["default"] = Camara;
