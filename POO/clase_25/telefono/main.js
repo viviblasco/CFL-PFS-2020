@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-//import * from "./node-emoji";
 var telefono_1 = require("./telefono");
 var TelefonoConCamara_1 = require("./TelefonoConCamara");
 //declaracion de variables
