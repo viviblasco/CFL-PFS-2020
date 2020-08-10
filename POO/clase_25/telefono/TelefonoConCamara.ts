@@ -1,16 +1,16 @@
-import camara from "./Camara";
+import Camara from "./Camara";
 import Telefono from "./telefono";
 
 
 export default class TelefonoConCamara extends Telefono {
 
 
-    private camara:camara;
+    private camara:Camara;
 
     constructor(){
         super();
         
-        this.camara=new camara();
+        this.camara=new Camara;
     }
 
     public sacarFoto():void{
