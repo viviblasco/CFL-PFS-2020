@@ -1,9 +1,10 @@
-//import * from "./node-emoji";
+import emoji from "./node_modules/node-emoji";
 import Telefono from "./telefono";
 import TelefonoConCamara from "./TelefonoConCamara"
 
 
 //declaracion de variables
+
 
 let movil1:Telefono;
 let movil2:TelefonoConCamara;
@@ -17,7 +18,7 @@ movil2 =new TelefonoConCamara();
 movil1.prenderApagar(true);
 movil2.prenderApagar(true);
 
-movil2.mandarMensaje("Hola venis hoy al asado? Ya paso la Pandemia")
+movil2.mandarMensaje("Hola venis hoy al asado? Ya paso la Pandemia");
 movil1.hacerLlamada("hola",2494051223);
 
 
