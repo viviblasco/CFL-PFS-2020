@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-exports.Auto = void 0;
 var Auto = /** @class */ (function () {
     function Auto(marca, modelo) {
         this.marca = marca;
@@ -12,4 +11,4 @@ var Auto = /** @class */ (function () {
     };
     return Auto;
 }());
-exports.Auto = Auto;
+exports["default"] = Auto;
