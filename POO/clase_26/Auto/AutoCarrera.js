@@ -13,13 +13,12 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-exports.AutoCarrera = void 0;
 var Auto_1 = require("./Auto");
 var AutoCarrera = /** @class */ (function (_super) {
     __extends(AutoCarrera, _super);
     function AutoCarrera(marca, modelo, numeroCompetencia, sponsors) {
         var _this = _super.call(this, marca, modelo) || this;
-        _this.numeroCompetencia = numeroCompetencia;
+        _this.numero = numeroCompetencia;
         if (sponsors) {
             _this.sponsors = sponsors;
         }
@@ -31,11 +30,11 @@ var AutoCarrera = /** @class */ (function (_super) {
     AutoCarrera.prototype.acelerar = function () {
         this.velocidadActual += 50;
     };
-    AutoCarrera.prototype.getNumeroCompetencia = function () {
-        return this.numeroCompetencia;
+    AutoCarrera.prototype.getNumero = function () {
+        return this.numero;
     };
-    AutoCarrera.prototype.cambiarNumeroCompetencia = function (numeroNuevo) {
-        this.numeroCompetencia = numeroNuevo;
+    AutoCarrera.prototype.cambiarNumero = function (numeroNuevo) {
+        this.numero = numeroNuevo;
     };
     AutoCarrera.prototype.agregarSponsor = function (sponsor) {
         var indice = this.buscarSponsor(sponsor);
@@ -65,4 +64,4 @@ var AutoCarrera = /** @class */ (function (_super) {
     };
     return AutoCarrera;
 }(Auto_1["default"]));
-exports.AutoCarrera = AutoCarrera;
+exports["default"] = AutoCarrera;
