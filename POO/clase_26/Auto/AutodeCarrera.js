@@ -13,13 +13,56 @@ var __extends = (this && this.__extends) || (function () {
     };
 })();
 exports.__esModule = true;
-var AutoDeCarrera = /** @class */ (function (_super) {
-    __extends(AutoDeCarrera, _super);
-    function AutoDeCarrera(marca, modelo) {
-        return _super.call(this, marca, modelo) || this;
+exports.AutoCarrera = void 0;
+var Auto_1 = require("./Auto");
+var AutoCarrera = /** @class */ (function (_super) {
+    __extends(AutoCarrera, _super);
+    function AutoCarrera(marca, modelo, numeroCompetencia, sponsors) {
+        var _this = _super.call(this, marca, modelo) || this;
+        _this.numeroCompetencia = numeroCompetencia;
+        if (sponsors) {
+            _this.sponsors = sponsors;
+        }
+        else {
+            _this.sponsors = [];
+        }
+        return _this;
     }
-    AutoDeCarrera.prototype.acelerar = function () {
+    AutoCarrera.prototype.acelerar = function () {
         this.velocidadActual += 50;
     };
-    return AutoDeCarrera;
-}(Auto));
+    AutoCarrera.prototype.getNumeroCompetencia = function () {
+        return this.numeroCompetencia;
+    };
+    AutoCarrera.prototype.cambiarNumeroCompetencia = function (numeroNuevo) {
+        this.numeroCompetencia = numeroNuevo;
+    };
+    AutoCarrera.prototype.agregarSponsor = function (sponsor) {
+        var indice = this.buscarSponsor(sponsor);
+        if (indice === -1) {
+            this.sponsors.push(sponsor);
+        }
+        else {
+            console.log("El sponsor ya existe");
+        }
+    };
+    AutoCarrera.prototype.eliminarSponsor = function (sponsor) {
+        var indice = this.buscarSponsor(sponsor);
+        if (indice != -1) {
+            this.sponsors.splice(indice);
+        }
+        else {
+            console.log("El sponsor no existe");
+        }
+    };
+    AutoCarrera.prototype.buscarSponsor = function (sponsor) {
+        for (var i = 0; i < this.sponsors.length; i++) {
+            if (this.sponsors[i] === sponsor) {
+                return i;
+            }
+        }
+        return -1;
+    };
+    return AutoCarrera;
+}(Auto_1["default"]));
+exports.AutoCarrera = AutoCarrera;
