@@ -46,16 +46,7 @@ export default class GestorPacientes {
      * Busca los paciente en los registros por DNI y por nombre y apellido
        devuelve la posicion del arreglo en donde esta el paciente o -1 si no existe
      */
-    public buscarPaciente(paciente: Paciente): number {
-        let indice = -1;
-        for(let i: number = 0; i<this.paciente.length; i++) {
-            if (this.paciente[i].getId() == paciente.getId() ) {
-                indice = i;
-            }
-            console.log(this.paciente[i].getId())
-        };
-        return indice;
-    }
+    
 
 
         //muestra el paciente buscado por nombre y apellido
