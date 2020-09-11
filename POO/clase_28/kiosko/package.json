@@ -1,0 +1,21 @@
+{
+    "name": "kiosco",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "kiosco": "tsc main.ts && node main.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.1",
+        "extra": "^0.2.1",
+        "fs": "0.0.1-security",
+        "ts-node-dev": "^1.0.0-pre.58",
+        "tsc": "^1.20150623.0",
+        "typescript": "^3.9.7"
+    },
+    "devDependencies": {},
+    "description": ""
+}
