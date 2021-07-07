@@ -1,0 +1,17 @@
+{
+  "name": "telefono",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "movil": "tsc main.ts & node main.js",
+    "compilar": "tsc telefono.ts & tsc telefonoConCamara.ts & tsc camara.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.0.27",
+    "node-emoji": "^1.10.0"
+  }
+}
